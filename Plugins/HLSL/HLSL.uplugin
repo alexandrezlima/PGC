@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "HLSL",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "Alexandre Zeferino Lima",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "HLSL",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
