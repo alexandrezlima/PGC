@@ -6,8 +6,13 @@ public class HLSL : ModuleRules
 {
 	public HLSL(ReadOnlyTargetRules Target) : base(Target)
 	{
+		DefaultBuildSettings = BuildSettingsVersion.V2;
+
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		
+		ShadowVariableWarningLevel = WarningLevel.Error;
+		bLegacyPublicIncludePaths = false;
+
+
 		PublicIncludePaths.AddRange(
 			new string[] {
 				// ... add public include paths required here ...
@@ -26,6 +31,8 @@ public class HLSL : ModuleRules
 			new string[]
 			{
 				"Core",
+				"RenderCore",
+				"Projects",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);

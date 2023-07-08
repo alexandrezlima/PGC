@@ -12,4 +12,8 @@ public:
 	/** IModuleInterface implementation */
 	virtual void StartupModule() override;
 	virtual void ShutdownModule() override;
+
+protected:
+	const FString HLSL_PluginName = FString(TEXT("HLSL"));
+	
 };

@@ -4,7 +4,7 @@
 	"VersionName": "1.0",
 	"FriendlyName": "HLSL",
 	"Description": "",
-	"Category": "Other",
+	"Category": "Materials",
 	"CreatedBy": "Alexandre Zeferino Lima",
 	"CreatedByURL": "",
 	"DocsURL": "",
@@ -17,8 +17,8 @@
 	"Modules": [
 		{
 			"Name": "HLSL",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
 		}
 	]
 }
