@@ -1,16 +1,12 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 using UnrealBuildTool;
 
 public class HLSL : ModuleRules
 {
 	public HLSL(ReadOnlyTargetRules Target) : base(Target)
 	{
-		DefaultBuildSettings = BuildSettingsVersion.V2;
 
 
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		ShadowVariableWarningLevel = WarningLevel.Error;
 		bLegacyPublicIncludePaths = false;
 		
 		PublicIncludePaths.AddRange(
@@ -31,8 +27,10 @@ public class HLSL : ModuleRules
 			new string[]
 			{
 				"Core",
+				"CoreUObject",
+				"Engine",
 				"RenderCore",
-				"Projects",
+				"Projects"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);

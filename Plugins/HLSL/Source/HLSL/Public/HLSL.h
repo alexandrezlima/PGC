@@ -1,5 +1,3 @@
-// Copyright 2023, Alexandre Zeferino Lima. All Rights Reserved.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -15,6 +13,4 @@ public:
 
 protected:
 	const FString HLSL_PluginName = FString(TEXT("HLSL"));
-
 };
-
