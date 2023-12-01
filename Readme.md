@@ -2,4 +2,4 @@
 
 ##Renderização Baseada em Física em Jogos Digitais
 
-Acesse https://alexandrezlima.github.io/pgc para abrir a versão interativa em Web Assembly.
+Acesse https://alexandrezlima.github.io/PGC para abrir a versão interativa em Web Assembly.
