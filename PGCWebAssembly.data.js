@@ -173,6 +173,6 @@ Module['FS_createPath']('/PGCWebAssembly/Content', 'Paks', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 53, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"start": 53, "audio": 0, "end": 101, "filename": "/UE4CommandLine.txt"}, {"start": 101, "audio": 0, "end": 69820988, "filename": "/PGCWebAssembly/Content/Paks/PGCWebAssembly-HTML5.pak"}], "remote_package_size": 69820988, "package_uuid": "8d30552e-8333-4093-8477-84be0eeee958"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 53, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"start": 53, "audio": 0, "end": 101, "filename": "/UE4CommandLine.txt"}, {"start": 101, "audio": 0, "end": 69856543, "filename": "/PGCWebAssembly/Content/Paks/PGCWebAssembly-HTML5.pak"}], "remote_package_size": 69856543, "package_uuid": "40e028dd-9609-451b-a914-7be5a1ad1337"});
 
 })();
