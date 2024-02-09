@@ -10,12 +10,11 @@
 html, body, .container {
 	height: 100%;
 	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
-	margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
 .h4, h4 {
+	margin-top: 1pt;
+	margin-bottom: 1pt;
 	font-size: 10pt;
 }
 
@@ -49,12 +48,18 @@ html, body, .container {
 }
 
 .wrapper {
-    text-align: center;
-    height: 100%;
-    background-color: black; /* Adiciona um fundo preto */
-    display: center;
-    align-items: center;
-    justify-content: center;
+	position: relative;
+	margin: 1em auto 10px auto;
+	text-align: center;
+	min-width: 640px;
+	width: 100%;
+	height: 480px; /* initial height, will be dynamically adjusted at runtime */
+	max-width: 95%;
+	display: block;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	justify-content: center;
 }
 
  .emscripten {
@@ -76,13 +81,10 @@ html, body, .container {
 }
 
 #canvas:not([fullscreen]) {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	width: 100%;
-    height: 100%;
-    display: block;
 }
 
 .texthalf {
@@ -94,78 +96,22 @@ html, body, .container {
 }
 
 .buttonarea {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-top: 0px;
-    border-bottom: 0px;
-    padding: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-	display: none;
-}
+	min-height: 3%;
+	border-top: 0px;
+	border-bottom: 0px;
+	padding: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+ }
 
-.btn {
-    padding: 0px;
-    text-align: center;
-    min-width: 150px;
-    z-index: 1; /* Garante que o botão apareça sobre o conteúdo */
-	display: none;
-}
-
+.btn { padding: 0px; text-align: center; min-width: 150px }
 .progress { background: rgba(245, 245, 245, 1); border: 0px solid rgba(245, 245, 245, 1); border-radius: 0px; height: 4px; }
 .progress-bar-custom { background: rgba(153, 153, 153, 1); }
 .centered-axis-xy {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 }
 
-#loading-container {
-    text-align: center;
-}
-
-#compilingmessage img {
-    /* Adapte o estilo da imagem conforme necessário */
-    width: 300px;
-    height: 300px;
-    background-color: white; /* Define a cor da imagem para branco */
-    border-radius: 50%; /* Para criar uma forma circular, se necessário */
-    animation: pulse 1.5s infinite; /* Adiciona a animação pulse */
-}
-
-
-#loading-text {
-    text-align: center;
-    margin-top: 10px; /* Ajuste conforme necessário */
-    color: #000000; /* Cor do texto */
-}
-
-/* Animação simples para o texto "loading" */
-@keyframes pulse {
-    0% { opacity: 0.5; }
-    50% { opacity: 1; }
-    100% { opacity: 0.5; }
-}
-
-#loading-text {
-    text-align: center;
-    margin-top: 10px; /* Ajuste conforme necessário */
-    color: #000000; /* Cor do texto */
-}
-
-#loading-text p {
-    margin: 0;
-    font-size: 16px; /* Ajuste conforme necessário */
-    animation: pulse 1.5s infinite; /* Adiciona a animação pulse ao texto */
-    color: white; /* Define a cor do texto para branco */
-}
-
-#fullscreen_request {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
